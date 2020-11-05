@@ -8,11 +8,11 @@
         <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.bohemia</groupId>
+    <groupId>org.bohemia</groupId>
     <artifactId>web-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>web-api</name>
-    <description>bohemia-web-api</description>
+    <description>网址基础后端</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -28,6 +28,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
         <dependency>

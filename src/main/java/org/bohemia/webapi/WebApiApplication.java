@@ -1,4 +1,4 @@
-package com.bohemia.webapi;
+package org.bohemia.webapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
