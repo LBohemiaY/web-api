@@ -1,76 +1,69 @@
 package org.bohemia.webapi.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.bohemia.webapi.entity.User;
+import org.bohemia.webapi.service.UserServiceApi;
+import org.bohemia.webapi.utils.jwt.TokenUtil;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
 
 /**
  * 用户相关
  */
-
+@Slf4j
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
-    @PostMapping(value = "/login")
-    @ResponseBody
-    public Map login(@RequestBody User user) {
-        //TODO 服务器数据库的登录判断
-        String username = user.getUsername();
-        HashMap<String, Object> tokens = new HashMap<>();
-        tokens.put("admin","admin-token");
-        tokens.put("editor","editor-token");
-        tokens.put("704398960@qq.com","hhhhhh");
-        HashMap<String, Object> response = new HashMap<>();
-        HashMap<String, Object> responseData = new HashMap<>();
-        responseData.put("token",tokens.get(username));
-        response.put("code",20000);
-        response.put("msg","登录成功");
-        response.put("data",responseData);
-        return response;
+    private final UserServiceApi userServiceApi;
+
+    public UserController(UserServiceApi userServiceApi){ this.userServiceApi = userServiceApi; };
+
+
+    @PostMapping("/login")
+    public String login(HttpServletResponse response, @RequestBody JSONObject obj) throws JsonProcessingException {
+        String token=null;
+        User user = new User();
+        user.setUsername(obj.getString("username"));
+        user.setPassword(obj.getString("password"));
+        User findUser = this.userServiceApi.getLoginOne(user);
+        if(findUser!=null){
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+            String date = df.format(new Date());// new Date()为获取当前系统时间，也可使用当前时间戳
+            log.info(obj+"  尝试登录: " + date);
+            token = TokenUtil.sign(findUser);
+        }
+        HashMap<String,Object> hs=new HashMap<>();
+        hs.put("token",token);
+        if(token==null){
+            hs.put("code","401");
+            hs.put("msg","无该用户");
+        }else {
+            hs.put("code","200");
+            hs.put("msg","登录成功");
+        }
+        ObjectMapper objectMapper=new ObjectMapper();
+        return objectMapper.writeValueAsString(hs);
     }
 
-    @GetMapping(value = "/info")
+    @RequestMapping(value = "/test",method = RequestMethod.POST)
     @ResponseBody
-    public Map info(@RequestParam("token")String token) {
-        //TODO 服务器数据中的token操作
-        HashMap<String, Object> users = new HashMap<>();
-        User adminUser = new User();
-        User editorUser = new User();
-        List<String> adminRole = new ArrayList<String>();
-        adminRole.add("admin-token");
-        List<String> editorRole = new ArrayList<String>();
-        adminRole.add("editor-token");
-        adminUser.setRoles(adminRole);
-        adminUser.setIntroduction("I am a super administrator");
-        adminUser.setAvatar("https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
-        adminUser.setName("Super Admin");
-        editorUser.setRoles(editorRole);
-        editorUser.setIntroduction("I am an editor");
-        editorUser.setAvatar("https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
-        editorUser.setName("Normal Editor");
-        users.put("admin-token",adminUser);
-        users.put("hhhhhh",editorUser);
-        HashMap<String, Object> responseData = new HashMap<>();
-        responseData.put("code",20000);
-        responseData.put("msg","登录成功");
-        responseData.put("data",users.get(token));
-        return responseData;
-    }
-
-    @PostMapping(value = "/logout")
-    @ResponseBody
-    public Map logout() {
-        HashMap<String, Object> responseData = new HashMap<>();
-        responseData.put("code",20000);
-        responseData.put("msg","退出成功");
-        responseData.put("data","success");
-        return responseData;
+    public String test(@RequestBody Map<String,Object> para) throws JsonProcessingException {
+        HashMap<String,Object> hs=new HashMap<>();
+        hs.put("testdata","data");
+        ObjectMapper objectMapper=new ObjectMapper();
+        return objectMapper.writeValueAsString(hs);
     }
 
 }

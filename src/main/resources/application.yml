@@ -1,0 +1,25 @@
+# 将本机的配置放入根目录下的config文件中，根目录的config文件夹不上传，需要自己上传
+server:
+    port: 8023
+    servlet:
+        context-path: /api
+logging:
+    level:
+        org.springframework.boot.autoconfigure: error
+        com.buaa.blockchain: info
+    file:
+        name: ./logs/myweb.log
+spring:
+    datasource:
+        database1:
+            jdbc-url: jdbc:mysql://localhost:3306/web
+            username: root
+            password: lby123456
+            driverClassName: com.mysql.jdbc.Driver
+        database2:
+            jdbc-url: jdbc:mysql://39.105.129.47:3306/bcdb7700
+            username: root
+            password: hitty
+            driverClassName: com.mysql.jdbc.Driver
+
+
