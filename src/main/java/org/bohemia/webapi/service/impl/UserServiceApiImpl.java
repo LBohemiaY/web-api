@@ -17,4 +17,14 @@ public class UserServiceApiImpl implements UserServiceApi {
     public User getLoginOne(User user) {
         return userMapper.getLoginOne(user);
     }
+
+    @Override
+    public User findUserById(int id) {
+        return userMapper.findUserById(id);
+    }
+
+    @Override
+    public User findUserByUsername(String username) {
+        return userMapper.findUserByUsername(username);
+    }
 }
