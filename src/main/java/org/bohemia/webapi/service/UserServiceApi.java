@@ -1,5 +1,6 @@
 package org.bohemia.webapi.service;
 
+import com.alibaba.fastjson.JSONObject;
 import org.bohemia.webapi.entity.User;
 
 public interface UserServiceApi {
@@ -8,4 +9,6 @@ public interface UserServiceApi {
     User findUserById(int id);
 
     User findUserByUsername(String username);
+
+    int addUser(JSONObject obj);
 }

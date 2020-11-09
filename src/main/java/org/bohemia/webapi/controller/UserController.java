@@ -5,8 +5,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.ApiOperation;
-import jdk.nashorn.internal.parser.Token;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.bohemia.webapi.entity.User;
 import org.bohemia.webapi.service.UserServiceApi;
@@ -15,13 +13,10 @@ import org.bohemia.webapi.utils.annotation.PassToken;
 import org.bohemia.webapi.utils.jwt.TokenUtil;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
-
 
 /**
  * 用户相关
@@ -98,6 +93,22 @@ public class UserController {
         log.info(objectMapper.writeValueAsString(hs));
         return objectMapper.writeValueAsString(hs);
     }
+
+    @ApiOperation(value = "注册账号接口")
+    @PostMapping("/register")
+    public String register(@RequestBody JSONObject obj) throws JsonProcessingException {
+        int id = userServiceApi.addUser(obj);
+        log.info("注册账号id: ",id);
+        HashMap<String,Object> hs=new HashMap<>();
+        hs.put("code", 200);
+        hs.put("message", "注册成功！等待审核");
+        ObjectMapper objectMapper=new ObjectMapper();
+        log.info(objectMapper.writeValueAsString(hs));
+        return objectMapper.writeValueAsString(hs);
+    }
+
+
+
 
 
 

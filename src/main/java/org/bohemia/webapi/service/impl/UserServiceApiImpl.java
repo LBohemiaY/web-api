@@ -1,5 +1,6 @@
 package org.bohemia.webapi.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import org.bohemia.webapi.entity.User;
 import org.bohemia.webapi.mapper.UserMapper;
 import org.bohemia.webapi.service.UserServiceApi;
@@ -26,5 +27,18 @@ public class UserServiceApiImpl implements UserServiceApi {
     @Override
     public User findUserByUsername(String username) {
         return userMapper.findUserByUsername(username);
+    }
+
+    @Override
+    public int addUser(JSONObject obj) {
+        User newuser = new User();
+        newuser.setUsername(obj.getString("username"));
+        newuser.setPassword(obj.getString("password"));
+        newuser.setIntroduction(obj.getString("introduction"));
+        newuser.setName(obj.getString("name"));
+        // 初始账号创建时，权限为普通，且状态为“待审核”，需要系统管理员审核通过后才能使用
+        newuser.setRole("user");
+        newuser.setStatus("verify");
+        return userMapper.addUser(newuser);
     }
 }
