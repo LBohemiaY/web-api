@@ -58,7 +58,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 if (token == null) {
                     json.put("success","false");
                     json.put("msg","无token,请重新登录");
-                    json.put("code","50000");
+                    json.put("code",50008);
                     response.getWriter().append(json.toJSONString());
                     return false;
                 }
@@ -68,7 +68,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 } catch (JWTDecodeException j) {
                     json.put("success","false");
                     json.put("msg","token失效,请重新登录");
-                    json.put("code","50000");
+                    json.put("code",50014);
                     response.getWriter().append(json.toJSONString());
                     return false;
                 }
@@ -77,7 +77,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 if (user == null) {
                     json.put("success","false");
                     json.put("msg","用户不存在，请重新登录");
-                    json.put("code","50000");
+                    json.put("code",50000);
                     response.getWriter().append(json.toJSONString());
                     return false;
                 }
