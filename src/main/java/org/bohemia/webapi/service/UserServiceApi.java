@@ -11,4 +11,6 @@ public interface UserServiceApi {
     User findUserByUsername(String username);
 
     int addUser(JSONObject obj);
+
+    int usernameCheck(String username);
 }

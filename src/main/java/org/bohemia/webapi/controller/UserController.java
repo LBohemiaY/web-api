@@ -107,6 +107,20 @@ public class UserController {
         return objectMapper.writeValueAsString(hs);
     }
 
+    @ApiOperation(value = "检查用户名是否重复")
+    @GetMapping("/usernameCheck")
+    public String usernameCheck(@RequestParam("username")String username) throws JsonProcessingException {
+        int count = userServiceApi.usernameCheck(username);
+        HashMap<String,Object> hs=new HashMap<>();
+        hs.put("code", 200);
+        hs.put("count", count);
+        ObjectMapper objectMapper=new ObjectMapper();
+        log.info(objectMapper.writeValueAsString(hs));
+        return objectMapper.writeValueAsString(hs);
+    }
+
+
+
 
 
 

@@ -41,4 +41,9 @@ public class UserServiceApiImpl implements UserServiceApi {
         newuser.setStatus("verify");
         return userMapper.addUser(newuser);
     }
+
+    @Override
+    public int usernameCheck(String username) {
+        return userMapper.usernameCheck(username);
+    }
 }

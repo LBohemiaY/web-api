@@ -816,3 +816,51 @@ com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on Mon Nov
 2020-11-09 10:59:52.006  INFO 1900 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5NDM5MiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.N1hbBZb6LhZ19-b1St93xLmhVzrbPLzC9vMtIULtpZY"}
 2020-11-09 10:59:52.022  INFO 1900 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
 2020-11-09 10:59:54.485  INFO 1900 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-09 15:47:32.701  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 11024 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
+2020-11-09 15:47:32.704  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
+2020-11-09 15:47:32.735  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-09 15:47:32.735  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-09 15:47:33.248  WARN 11024 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-11-09 15:47:33.248  WARN 11024 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
+2020-11-09 15:47:33.689  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
+2020-11-09 15:47:33.695  INFO 11024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 15:47:33.695  INFO 11024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 15:47:33.751  INFO 11024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-11-09 15:47:33.751  INFO 11024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
+2020-11-09 15:47:34.382  INFO 11024 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-09 15:47:34.443  INFO 11024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 15:47:34.522  INFO 11024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-09 15:47:34.664  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
+2020-11-09 15:47:34.665  INFO 11024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-09 15:47:34.676  INFO 11024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-09 15:47:34.699  INFO 11024 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-09 15:47:34.837  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.482 seconds (JVM running for 3.149)
+2020-11-09 15:48:13.325  INFO 11024 --- [http-nio-8023-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 15:48:13.325  INFO 11024 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 15:48:13.331  INFO 11024 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-11-09 15:48:13.356  INFO 11024 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 15:48:13.466  INFO 11024 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 15:48:13.488  INFO 11024 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"count":1}
+2020-11-09 15:48:41.875  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"count":0}
+2020-11-09 16:31:48.449  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:31:48
+2020-11-09 16:31:48.599  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNDMwOCwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.sWOa-o8s_OfXRPFMHrKKybPJ0o3eHiWoP5JIzRVbC7M"}
+2020-11-09 16:31:48.626  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-09 16:32:56.225  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-09 16:32:58.602  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-09 16:48:03.307  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:48:03
+2020-11-09 16:48:03.308  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTI4MywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.bG8-wOv2oMm-azjmB0nl5xxnecJKy91ZPbxdlEoPcF4"}
+2020-11-09 16:48:03.336  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-09 16:49:08.126  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-09 16:49:10.481  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-09 16:52:01.314  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:01
+2020-11-09 16:52:01.314  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.6W5Sq3jBYY5IcH3WLnoPehr9viMSz9MWngBVYLlinvw"}
+2020-11-09 16:52:03.008  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
+2020-11-09 16:52:03.009  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
+2020-11-09 16:52:03.630  INFO 11024 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
+2020-11-09 16:52:03.631  INFO 11024 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
+2020-11-09 16:52:03.880  INFO 11024 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
+2020-11-09 16:52:03.881  INFO 11024 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
+2020-11-09 16:52:06.145  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:06
+2020-11-09 16:52:06.146  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyNiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.Ijvvgii0dr2HrfUnot1wDLX5V5sXDi1RIie154i2LIM"}
+2020-11-09 16:54:40.593  INFO 11024 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-09 16:54:43.912  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
