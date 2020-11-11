@@ -1,6 +1,5 @@
 package org.bohemia.webapi.controller;
 
-
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -40,7 +39,7 @@ public class UserController {
         user.setUsername(obj.getString("username"));
         user.setPassword(obj.getString("password"));
         User findUser = userServiceApi.getLoginOne(user);
-        if(findUser!=null){
+        if(findUser!=null && findUser.getStatus().equals("normal")){
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
             String date = df.format(new Date());// new Date()为获取当前系统时间，也可使用当前时间戳
             log.info(obj.getString("username")+"  尝试登录: " + date);
@@ -48,10 +47,13 @@ public class UserController {
         }
         HashMap<String,Object> hs=new HashMap<>();
         hs.put("token",token);
-        if(token==null){
+        if(token==null&&findUser==null){
             hs.put("code",401);
-            hs.put("message","用户名或密码错误!");
-        }else {
+            hs.put("message","无此用户，请先注册");
+        }else if (token==null&&findUser.getStatus().equals("verify")){
+            hs.put("code",401);
+            hs.put("message","请等待账号审核");
+        } else {
             hs.put("code",200);
             hs.put("message","登录成功");
         }
@@ -118,11 +120,6 @@ public class UserController {
         log.info(objectMapper.writeValueAsString(hs));
         return objectMapper.writeValueAsString(hs);
     }
-
-
-
-
-
 
 
 

@@ -1,212 +1,72 @@
-2020-11-09 09:07:14.059  INFO 5792 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 5792 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:07:14.074  INFO 5792 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:07:14.154  INFO 5792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:07:14.169  INFO 5792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:07:15.129  WARN 5792 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:07:15.129  WARN 5792 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:07:15.799  INFO 5792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:07:15.806  INFO 5792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:07:15.806  INFO 5792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:07:15.884  INFO 5792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:07:15.885  INFO 5792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1691 ms
-2020-11-09 09:07:16.617  INFO 5792 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:07:16.681  INFO 5792 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:07:16.747  INFO 5792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:07:16.859  INFO 5792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:07:16.860  INFO 5792 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:07:16.872  INFO 5792 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:07:16.891  INFO 5792 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:07:17.008  INFO 5792 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 3.309 seconds (JVM running for 4.041)
-2020-11-09 09:07:23.369  INFO 5792 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:07:23.369  INFO 5792 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:07:23.375  INFO 5792 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-11-09 09:07:23.441  INFO 5792 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:07:23.558  INFO 5792 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:07:23.572  INFO 5792 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:07:23
-2020-11-09 09:07:39.090  INFO 5792 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:07:39
-2020-11-09 09:07:57.741  INFO 5792 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:07:57
-2020-11-09 09:09:18.864  INFO 5792 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:09:18
-2020-11-09 09:10:16.163  INFO 5792 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:10:16
-2020-11-09 09:10:20.097  INFO 5792 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:10:20
-2020-11-09 09:10:31.246  INFO 5792 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:10:31
-2020-11-09 09:11:14.299  INFO 5792 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:11:14
-2020-11-09 09:11:59.482  INFO 5792 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:11:59
-2020-11-09 09:12:24.455  INFO 5792 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:12:24
-2020-11-09 09:13:23.195  INFO 11804 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 11804 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:13:23.197  INFO 11804 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:13:23.229  INFO 11804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:13:23.229  INFO 11804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:13:23.599  WARN 11804 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:13:23.599  WARN 11804 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:13:24.147  INFO 11804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:13:24.153  INFO 11804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:13:24.153  INFO 11804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:13:24.213  INFO 11804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:13:24.213  INFO 11804 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
-2020-11-09 09:13:24.813  INFO 11804 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:13:24.881  INFO 11804 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:13:24.956  INFO 11804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:13:25.154  INFO 11804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:13:25.155  INFO 11804 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:13:25.166  INFO 11804 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:13:25.185  INFO 11804 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:13:25.296  INFO 11804 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.334 seconds (JVM running for 2.941)
-2020-11-09 09:13:28.678  INFO 11804 --- [http-nio-8023-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:13:28.678  INFO 11804 --- [http-nio-8023-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:13:28.682  INFO 11804 --- [http-nio-8023-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 09:13:28.738  INFO 11804 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:13:28.845  INFO 11804 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:13:28.858  INFO 11804 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:13:28
-2020-11-09 09:13:29.018  INFO 11804 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODAwOH0.tMaJ_O9KvzcVyhGp41Jh-JVeYZG0DV38E9WC7aVV9fw"}
-2020-11-09 09:13:40.422  INFO 11804 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:13:40
-2020-11-09 09:13:40.423  INFO 11804 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODAyMH0.6fYmcot1vtzxSkgwDQlva1QcmQmEENsAbmhkYk385IA"}
-2020-11-09 09:14:11.605  INFO 14540 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 14540 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:14:11.607  INFO 14540 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:14:11.640  INFO 14540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:14:11.641  INFO 14540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:14:12.010  WARN 14540 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:14:12.010  WARN 14540 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:14:12.461  INFO 14540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:14:12.466  INFO 14540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:14:12.466  INFO 14540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:14:12.524  INFO 14540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:14:12.524  INFO 14540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 883 ms
-2020-11-09 09:14:13.083  INFO 14540 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:14:13.139  INFO 14540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:14:13.198  INFO 14540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:14:13.305  INFO 14540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:14:13.306  INFO 14540 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:14:13.317  INFO 14540 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:14:13.334  INFO 14540 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:14:13.432  INFO 14540 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.065 seconds (JVM running for 2.638)
-2020-11-09 09:14:23.939  INFO 14540 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:14:23.939  INFO 14540 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:14:23.944  INFO 14540 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 09:14:24.002  INFO 14540 --- [http-nio-8023-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:14:24.110  INFO 14540 --- [http-nio-8023-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:14:24.126  INFO 14540 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:14:24
-2020-11-09 09:14:24.303  INFO 14540 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODA2NH0.q0wU8OwsBK47TomHrZMwwFmRoBEqFbvWOv40J47dq9k"}
-2020-11-09 09:14:47.607  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 14852 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:14:47.609  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:14:47.642  INFO 14852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:14:47.642  INFO 14852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:14:48.012  WARN 14852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:14:48.012  WARN 14852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:14:48.434  INFO 14852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:14:48.439  INFO 14852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:14:48.440  INFO 14852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:14:48.495  INFO 14852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:14:48.495  INFO 14852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 853 ms
-2020-11-09 09:14:49.067  INFO 14852 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:14:49.129  INFO 14852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:14:49.196  INFO 14852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:14:49.291  INFO 14852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:14:49.292  INFO 14852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:14:49.301  INFO 14852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:14:49.316  INFO 14852 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:14:49.406  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.126 seconds (JVM running for 2.674)
-2020-11-09 09:14:52.533  INFO 14852 --- [http-nio-8023-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:14:52.533  INFO 14852 --- [http-nio-8023-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:14:52.543  INFO 14852 --- [http-nio-8023-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-11-09 09:14:52.617  INFO 14852 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:14:52.734  INFO 14852 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:14:52.751  INFO 14852 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:14:52
-2020-11-09 09:14:52.910  INFO 14852 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODA5Mn0.jqOpV_-B0OYAHNsKJK7e1Zt_aLi4xyKr3Sha8-m6Aus"}
-2020-11-09 09:14:57.899  INFO 14852 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:14:57
-2020-11-09 09:14:57.901  INFO 14852 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODA5N30.szyzDI0DTHcwQ2ee3zhMxifJ51Nemix69Qf0VYoDOko"}
-2020-11-09 09:15:03.846  INFO 14852 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:15:03
-2020-11-09 09:15:03.847  INFO 14852 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODEwM30.mBJsF5K1awBJe_vI5lQJ3rq_mrKlG0aU97zkmKFl8w8"}
-2020-11-09 09:17:14.570  INFO 13028 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 13028 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:17:14.572  INFO 13028 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:17:14.599  INFO 13028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:17:14.599  INFO 13028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:17:14.960  WARN 13028 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:17:14.960  WARN 13028 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:17:15.383  INFO 13028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:17:15.388  INFO 13028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:17:15.388  INFO 13028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:17:15.446  INFO 13028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:17:15.446  INFO 13028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 847 ms
-2020-11-09 09:17:16.022  INFO 13028 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:17:16.082  INFO 13028 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:17:16.142  INFO 13028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:17:16.237  INFO 13028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:17:16.238  INFO 13028 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:17:16.248  INFO 13028 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:17:16.264  INFO 13028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:17:16.353  INFO 13028 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.011 seconds (JVM running for 2.568)
-2020-11-09 09:17:55.674  INFO 13028 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:17:55.674  INFO 13028 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:17:55.680  INFO 13028 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-11-09 09:17:55.736  INFO 13028 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:17:55.841  INFO 13028 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:17:55.855  INFO 13028 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:17:55
-2020-11-09 09:17:56.010  INFO 13028 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODI3NX0.uMxF7xpHph_h11qTEIV20mZEfjHxm4f4rcoJ1BEvV5w"}
-2020-11-09 09:18:25.526  INFO 9716 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 9716 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:18:25.529  INFO 9716 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:18:25.560  INFO 9716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:18:25.561  INFO 9716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:18:25.974  WARN 9716 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:18:25.974  WARN 9716 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:18:26.441  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:18:26.446  INFO 9716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:18:26.446  INFO 9716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:18:26.536  INFO 9716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:18:26.536  INFO 9716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
-2020-11-09 09:18:27.088  INFO 9716 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:18:27.162  INFO 9716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:18:27.234  INFO 9716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:18:27.330  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:18:27.330  INFO 9716 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:18:27.339  INFO 9716 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:18:27.355  INFO 9716 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:18:27.443  INFO 9716 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.186 seconds (JVM running for 2.736)
-2020-11-09 09:18:33.285  INFO 9716 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:18:33.285  INFO 9716 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:18:33.289  INFO 9716 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 09:18:33.345  INFO 9716 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:18:33.450  INFO 9716 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:18:33.463  INFO 9716 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:18:33
-2020-11-09 09:18:33.616  INFO 9716 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODMxM30.8TWyusTbwbV7B2khKAzo_IIqwwuv8Xby1EYAGQAuf8M"}
-2020-11-09 09:19:58.093  INFO 5904 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 5904 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:19:58.095  INFO 5904 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:19:58.119  INFO 5904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:19:58.119  INFO 5904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:19:58.484  WARN 5904 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:19:58.484  WARN 5904 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:19:58.905  INFO 5904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:19:58.910  INFO 5904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:19:58.910  INFO 5904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:19:58.966  INFO 5904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:19:58.966  INFO 5904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 847 ms
-2020-11-09 09:19:59.524  INFO 5904 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:19:59.581  INFO 5904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:19:59.638  INFO 5904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:19:59.730  INFO 5904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:19:59.731  INFO 5904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:19:59.740  INFO 5904 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:19:59.756  INFO 5904 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:19:59.845  INFO 5904 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 1.975 seconds (JVM running for 2.512)
-2020-11-09 09:20:02.714  INFO 5904 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:20:02.715  INFO 5904 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:20:02.720  INFO 5904 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 09:20:02.774  INFO 5904 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:20:02.877  INFO 5904 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:20:02.891  INFO 5904 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:20:02
-2020-11-09 09:20:03.042  INFO 5904 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODQwMn0.jkj8ckDj3nNZJE3_IZB-JxEEArXc65TtdPfqSTBcAm8"}
-2020-11-09 09:20:03.052 ERROR 5904 --- [http-nio-8023-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response] with root cause
+2020-11-11 09:18:11.162  INFO 12948 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 12948 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
+2020-11-11 09:18:11.168  INFO 12948 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
+2020-11-11 09:18:11.200  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-11 09:18:11.200  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-11 09:18:11.789  WARN 12948 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-11-11 09:18:11.790  WARN 12948 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
+2020-11-11 09:18:12.523  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
+2020-11-11 09:18:12.532  INFO 12948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-11 09:18:12.533  INFO 12948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-11 09:18:12.617  INFO 12948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-11-11 09:18:12.617  INFO 12948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1416 ms
+2020-11-11 09:18:13.705  INFO 12948 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-11 09:18:13.797  INFO 12948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-11 09:18:13.877  INFO 12948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-11 09:18:13.996  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
+2020-11-11 09:18:13.997  INFO 12948 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-11-11 09:18:14.008  INFO 12948 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-11-11 09:18:14.032  INFO 12948 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-11-11 09:18:14.184  INFO 12948 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 3.36 seconds (JVM running for 4.179)
+2020-11-11 09:18:40.290  INFO 12948 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-11 09:18:40.291  INFO 12948 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-11 09:18:40.295  INFO 12948 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-11-11 09:18:40.352  INFO 12948 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-11 09:18:40.456  INFO 12948 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-11 09:18:40.470  INFO 12948 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:18:40
+2020-11-11 09:18:40.638  INFO 12948 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MTEyMCwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.IVfXr-roiJsx7gKlsLMkLdIcTKBl15A2GKMkj7DyLCQ"}
+2020-11-11 09:18:52.484  INFO 12948 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:24:54.568  INFO 12948 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:27:42.985  INFO 12948 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:28:15.019  INFO 12948 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:28:15
+2020-11-11 09:28:15.020  INFO 12948 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MTY5NSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.ZcQCbjrOcDk9ry-3rBSV9kDay37mKugV2-fMqISXlmc"}
+2020-11-11 09:28:15.038  INFO 12948 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:28:17.345  INFO 12948 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:29:51.643  INFO 12948 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:29:51
+2020-11-11 09:29:51.643  INFO 12948 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MTc5MSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.GZ7mfyL6oD6uyTMi2mI2Yitwb9_LVCXKR2q40D9mm1A"}
+2020-11-11 09:29:51.660  INFO 12948 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:29:53.709  INFO 12948 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:33:01.124  INFO 12948 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:33:01
+2020-11-11 09:33:01.125  INFO 12948 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MTk4MSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.8YEyNZ4wW03feEQLGxLm5_TpKZO87Z2AElmPRtKjfxU"}
+2020-11-11 09:33:01.142  INFO 12948 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:33:05.398  INFO 12948 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:33:21.594  WARN 12948 --- [http-nio-8023-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'token' is not present]
+2020-11-11 09:33:33.885  WARN 12948 --- [http-nio-8023-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'token' is not present]
+2020-11-11 09:33:40.684  INFO 12948 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:33:40
+2020-11-11 09:33:40.685  INFO 12948 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MjAyMCwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.A2tayIX93vmWOcbw_CPGtK2A941ERrqTTY_iTCchxb4"}
+2020-11-11 09:33:40.705  INFO 12948 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:33:43.658  INFO 12948 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:33:44.396  INFO 12948 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:33:45.924  INFO 12948 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:38:55.798  INFO 12948 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:38:55
+2020-11-11 09:38:55.801  INFO 12948 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MjMzNSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.2uh077AlsZyFVO8HdyjuWKhfqMR6f1vjZIPdIdRkYTE"}
+2020-11-11 09:38:55.825  INFO 12948 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:38:59.148  INFO 12948 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:39:07.332  INFO 12948 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-11 09:39:07
+2020-11-11 09:39:07.332  INFO 12948 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNTA2MjM0NywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.x6A4f4n82IcX5MkkJIx46a4LEhXztxI58VV3jRAlkDE"}
+2020-11-11 09:39:07.352  INFO 12948 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
+2020-11-11 09:39:27.436  INFO 12948 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:46:52.887  INFO 12948 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":401,"message":"请等待审核","token":null}
+2020-11-11 09:47:09.410 ERROR 12948 --- [http-nio-8023-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-java.lang.IllegalStateException: getWriter() has already been called for this response
-	at org.apache.catalina.connector.Response.getOutputStream(Response.java:550) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:210) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:84) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:126) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:280) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+java.lang.NullPointerException: null
+	at org.bohemia.webapi.controller.UserController.login(UserController.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
@@ -255,285 +115,49 @@ java.lang.IllegalStateException: getWriter() has already been called for this re
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
 
-2020-11-09 09:26:22.160  INFO 13144 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 13144 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:26:22.162  INFO 13144 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:26:22.192  INFO 13144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:26:22.192  INFO 13144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:26:22.623  WARN 13144 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:26:22.623  WARN 13144 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:26:23.068  INFO 13144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:26:23.074  INFO 13144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:26:23.074  INFO 13144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:26:23.133  INFO 13144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:26:23.133  INFO 13144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
-2020-11-09 09:26:23.704  INFO 13144 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:26:23.771  INFO 13144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:26:23.840  INFO 13144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:26:23.937  INFO 13144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:26:23.937  INFO 13144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:26:23.946  INFO 13144 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:26:23.963  INFO 13144 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:26:24.054  INFO 13144 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.225 seconds (JVM running for 2.777)
-2020-11-09 09:26:33.889  INFO 13144 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:26:33.889  INFO 13144 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:26:33.894  INFO 13144 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 09:26:56.633  INFO 6364 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 6364 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:26:56.636  INFO 6364 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:26:56.671  INFO 6364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:26:56.671  INFO 6364 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:26:57.046  WARN 6364 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:26:57.046  WARN 6364 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:26:57.475  INFO 6364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:26:57.480  INFO 6364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:26:57.480  INFO 6364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:26:57.539  INFO 6364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:26:57.540  INFO 6364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 869 ms
-2020-11-09 09:26:58.133  INFO 6364 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:26:58.216  INFO 6364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:26:58.283  INFO 6364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:26:58.377  INFO 6364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:26:58.378  INFO 6364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:26:58.386  INFO 6364 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:26:58.402  INFO 6364 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:26:58.508  INFO 6364 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.117 seconds (JVM running for 2.705)
-2020-11-09 09:27:09.113  INFO 6364 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:27:09.113  INFO 6364 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:27:09.118  INFO 6364 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 09:27:09.173  INFO 6364 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:27:09.276  INFO 6364 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:27:09.290  INFO 6364 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:27:09
-2020-11-09 09:27:09.441  INFO 6364 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODgyOX0.sCwfdGv2LrMf3SBrV5HJz29FS7p-DA9qx01x8H7ryqs"}
-2020-11-09 09:28:06.534  INFO 6364 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:28:06
-2020-11-09 09:28:06.535  INFO 6364 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODg4Nn0.u6VvSzZZQ6gogAgHZJ3fQspb44qkrJ83BpoKlshXYrc"}
-2020-11-09 09:28:28.527  INFO 6364 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:28:28
-2020-11-09 09:28:28.528  INFO 6364 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODkwOH0.BlraFB--zC8B3sVhRkPJ66FYul_E0IUi56YGXvL0VCU"}
-2020-11-09 09:28:48.343  INFO 6364 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:28:48
-2020-11-09 09:28:48.344  INFO 6364 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODkyOH0.yLY0NJQHbOFIMSKZJHInfxTjJdj45NRdVhxMJJIs0Lo"}
-2020-11-09 09:28:51.547  INFO 6364 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:28:51
-2020-11-09 09:28:51.548  INFO 6364 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"msg":"登录成功","code":"200","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODkzMX0.qn5mjRkNXB24maUsxKOyq9hN5BINlmj4RFXU_wDbj_k"}
-2020-11-09 09:29:12.292  INFO 6984 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 6984 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:29:12.294  INFO 6984 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:29:12.326  INFO 6984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:29:12.326  INFO 6984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:29:12.692  WARN 6984 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:29:12.692  WARN 6984 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:29:13.165  INFO 6984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:29:13.169  INFO 6984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:29:13.170  INFO 6984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:29:13.225  INFO 6984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:29:13.225  INFO 6984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 899 ms
-2020-11-09 09:29:13.776  INFO 6984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:29:13.833  INFO 6984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:29:13.897  INFO 6984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:29:13.996  INFO 6984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:29:13.997  INFO 6984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:29:14.006  INFO 6984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:29:14.023  INFO 6984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:29:14.122  INFO 6984 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.048 seconds (JVM running for 2.58)
-2020-11-09 09:29:20.768  INFO 6984 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:29:20.768  INFO 6984 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:29:20.772  INFO 6984 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 09:29:20.833  INFO 6984 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:29:20.938  INFO 6984 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:29:20.951  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:29:20
-2020-11-09 09:29:21.104  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODk2MH0.wiO9AydNixsKuZ6cwmrlmMfZdwG27-fniimKOxFZSQU"}
-2020-11-09 09:29:57.689  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:29:57
-2020-11-09 09:29:57.690  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODk5N30.sagfV8EzIhfOHyzo8UMDESkqFwesTRZfCHikZH-CbZc"}
-2020-11-09 09:29:59.410  INFO 6984 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:29:59
-2020-11-09 09:29:59.412  INFO 6984 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4ODk5OX0.mSxy1cpKdrbklHbDMyk0BH29dXPYU8bGwYD9YGoNscw"}
-2020-11-09 09:30:00.514  INFO 6984 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:00
-2020-11-09 09:30:00.514  INFO 6984 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAwMH0.2pRfUHb4y9ll2cUrG2DCmZhOvkVM-W1GxiX6vdhtsY0"}
-2020-11-09 09:30:04.880  INFO 6984 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:04
-2020-11-09 09:30:04.881  INFO 6984 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAwNH0.0j5ZS_BPyyGdefnPuDxe36C2kHHRz5v24o348J49RgY"}
-2020-11-09 09:30:07.676  INFO 6984 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:07
-2020-11-09 09:30:07.677  INFO 6984 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAwN30.jSgAMHwQOUZ-5czdoL3VzfpWbY77c1QCm7BdYAcxiYI"}
-2020-11-09 09:30:11.973  INFO 6984 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:11
-2020-11-09 09:30:11.974  INFO 6984 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAxMX0.FeYpsVSCw9nwIt0LrWkM4sKfMDJVxbBd5egdJ2jqg-k"}
-2020-11-09 09:30:13.009  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:13
-2020-11-09 09:30:13.010  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAxM30.0gs-ML_rV10jPEbxnkAeqNZiTgvLg_YgjzZb5Xo7QkQ"}
-2020-11-09 09:30:14.098  INFO 6984 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:14
-2020-11-09 09:30:14.098  INFO 6984 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAxNH0.-IDG2WJPy9gjtxKE_TpqnHbuqzN1OZvPUhoSuebLEpY"}
-2020-11-09 09:30:14.953  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:14
-2020-11-09 09:30:14.954  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAxNH0.-IDG2WJPy9gjtxKE_TpqnHbuqzN1OZvPUhoSuebLEpY"}
-2020-11-09 09:30:16.050  INFO 6984 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:16
-2020-11-09 09:30:16.050  INFO 6984 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAxNn0.HqFSG1zfBSfCq5Yskua40HMd8dLx42GR2fIg9KrwhMk"}
-2020-11-09 09:30:35.669  INFO 6984 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:30:35
-2020-11-09 09:30:35.670  INFO 6984 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTAzNX0.p3dc9D-29Ax3nQI_b3H8Maa3TPF5nsICMVZ3udHs7N0"}
-2020-11-09 09:32:10.566  INFO 6984 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":"401","message":"用户名或密码错误!","token":null}
-2020-11-09 09:32:19.537  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:32:19
-2020-11-09 09:32:19.538  INFO 6984 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTEzOX0.GdwxGMFrmaOJRQ6bGaA6vx0gtFKej9M-Dh8DEAoOtHU"}
-2020-11-09 09:32:21.673  INFO 6984 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:32:21
-2020-11-09 09:32:21.674  INFO 6984 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTE0MX0.nw10fgrSh5BtqqW2SaiTzPftY-jxK2Tpf4SizDESDMU"}
-2020-11-09 09:32:22.983  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:32:22
-2020-11-09 09:32:22.984  INFO 6984 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTE0Mn0.RAU5X14xlzDFxZYtqHW9VRUd4SvT732hFuLx7hTrYKw"}
-2020-11-09 09:33:01.205  INFO 6984 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:33:01
-2020-11-09 09:33:01.206  INFO 6984 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTE4MX0.v4piZzFsRnzpkARXX7MPfjTUcfwbdP80rzOQa5hyY5E"}
-2020-11-09 09:33:03.950  INFO 6984 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:33:03
-2020-11-09 09:33:03.950  INFO 6984 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTE4M30.VKmVkoB9IchSE-oZSOzEZ4IhuiwVbJ682ZlGHPlHiR4"}
-2020-11-09 09:33:19.940  INFO 304 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 304 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:33:19.942  INFO 304 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:33:19.970  INFO 304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:33:19.970  INFO 304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:33:20.333  WARN 304 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:33:20.333  WARN 304 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:33:20.759  INFO 304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:33:20.764  INFO 304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:33:20.765  INFO 304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:33:20.824  INFO 304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:33:20.824  INFO 304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 853 ms
-2020-11-09 09:33:21.397  INFO 304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:33:21.457  INFO 304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:33:21.520  INFO 304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:33:21.616  INFO 304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:33:21.617  INFO 304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:33:21.627  INFO 304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:33:21.645  INFO 304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:33:21.748  INFO 304 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.033 seconds (JVM running for 2.544)
-2020-11-09 09:33:24.814  INFO 304 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:33:24.814  INFO 304 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:33:24.818  INFO 304 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 09:33:24.873  INFO 304 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:33:24.977  INFO 304 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:33:24.990  INFO 304 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:33:24
-2020-11-09 09:33:25.141  INFO 304 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTIwNH0.kat-KK2u3uYjzKHbewsLHVBO44ilXyBHmi3GYtkqpmE"}
-2020-11-09 09:33:47.680  INFO 304 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:33:47
-2020-11-09 09:33:47.683  INFO 304 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTIyN30.Zvco_52O4hYbemIl11WBX1yfQGIUk1tjeRykZhg1WcY"}
-2020-11-09 09:33:48.906  INFO 304 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:33:48
-2020-11-09 09:33:48.906  INFO 304 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":"200","message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTIyOH0.s38lAfOTNfj9-XwTkV8E4z0zowduQv849nct2SVLqZk"}
-2020-11-09 09:35:48.116  INFO 3656 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 3656 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:35:48.118  INFO 3656 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:35:48.152  INFO 3656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:35:48.152  INFO 3656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:35:48.576  WARN 3656 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:35:48.576  WARN 3656 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:35:49.018  INFO 3656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:35:49.023  INFO 3656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:35:49.023  INFO 3656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:35:49.102  INFO 3656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:35:49.102  INFO 3656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 950 ms
-2020-11-09 09:35:49.665  INFO 3656 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:35:49.725  INFO 3656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:35:49.793  INFO 3656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:35:49.889  INFO 3656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:35:49.890  INFO 3656 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:35:49.899  INFO 3656 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:35:49.915  INFO 3656 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:35:50.010  INFO 3656 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.172 seconds (JVM running for 2.729)
-2020-11-09 09:35:52.110  INFO 3656 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:35:52.111  INFO 3656 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:35:52.119  INFO 3656 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-11-09 09:35:52.174  INFO 3656 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:35:52.280  INFO 3656 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:35:52.293  INFO 3656 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:35:52
-2020-11-09 09:35:52.453  INFO 3656 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTM1Mn0.BL-txqZ0gd2fS41uwxltvZhuKWrK2ZD1xmvYkLI72SQ"}
-2020-11-09 09:43:54.474  INFO 15092 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 15092 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 09:43:54.475  INFO 15092 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 09:43:54.503  INFO 15092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 09:43:54.503  INFO 15092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 09:43:54.866  WARN 15092 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 09:43:54.866  WARN 15092 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 09:43:55.320  INFO 15092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 09:43:55.325  INFO 15092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 09:43:55.325  INFO 15092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 09:43:55.383  INFO 15092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 09:43:55.383  INFO 15092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 879 ms
-2020-11-09 09:43:55.938  INFO 15092 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 09:43:55.995  INFO 15092 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 09:43:56.052  INFO 15092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 09:43:56.148  INFO 15092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 09:43:56.149  INFO 15092 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 09:43:56.159  INFO 15092 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 09:43:56.176  INFO 15092 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 09:43:56.267  INFO 15092 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.024 seconds (JVM running for 2.583)
-2020-11-09 09:43:58.001  INFO 15092 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 09:43:58.002  INFO 15092 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 09:43:58.006  INFO 15092 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 09:43:58.058  INFO 15092 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 09:43:58.161  INFO 15092 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 09:43:58.174  INFO 15092 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:43:58
-2020-11-09 09:43:58.322  INFO 15092 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTgzOH0.u8R0IAhVD04uACUb_0ncIgt_QNYZAMtPkfRPle_vmzo"}
-2020-11-09 09:44:29.012  INFO 15092 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:44:29
-2020-11-09 09:44:29.013  INFO 15092 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTg2OX0.sYBCVlNmqGnu2VVmWq3gZso1GUGVWmrr8Z8Uhm9QaAc"}
-2020-11-09 09:44:30.831  INFO 15092 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:44:30
-2020-11-09 09:44:30.831  INFO 15092 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTg3MH0.OGydn4WlQO7LqrACeZ3qDPlMPSFmFj0EysQhSt_hGnw"}
-2020-11-09 09:44:54.047  INFO 15092 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:44:54
-2020-11-09 09:44:54.049  INFO 15092 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTg5NH0.EvV3avrPKC6m4EEk8OGuoEZ9SuG7zKGVDVoMWnSHA48"}
-2020-11-09 09:45:17.537  INFO 15092 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:45:17
-2020-11-09 09:45:17.538  INFO 15092 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTkxN30.iKCtoROnuucddir8ZvyVEq_Y0S6D6E2ut2XTsCvlbKI"}
-2020-11-09 09:45:46.273  INFO 15092 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:45:46
-2020-11-09 09:45:46.274  INFO 15092 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg4OTk0Nn0.51gesHlqTr3UWC2HTiU4dWBgK1fjWe7AcBI0Ewxq2Po"}
-2020-11-09 09:48:14.858  INFO 15092 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 09:48:14
-2020-11-09 09:48:14.859  INFO 15092 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MDA5NH0.USdNFxP332su5JkxT-STH4Qv2jKeZRaGT7jpYB-0wpY"}
-2020-11-09 10:19:49.008  INFO 16236 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 16236 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:19:49.010  INFO 16236 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:19:49.042  INFO 16236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:19:49.042  INFO 16236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:19:49.450  WARN 16236 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:19:49.450  WARN 16236 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:19:49.938  INFO 16236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:19:49.944  INFO 16236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:19:49.944  INFO 16236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:19:50.007  INFO 16236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:19:50.007  INFO 16236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
-2020-11-09 10:19:50.626  INFO 16236 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:19:50.695  INFO 16236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:19:50.762  INFO 16236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:19:50.863  INFO 16236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:19:50.864  INFO 16236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:19:50.874  INFO 16236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:19:50.891  INFO 16236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:19:50.992  INFO 16236 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.22 seconds (JVM running for 2.75)
-2020-11-09 10:19:52.518  INFO 16236 --- [http-nio-8023-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:19:52.518  INFO 16236 --- [http-nio-8023-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:19:52.528  INFO 16236 --- [http-nio-8023-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-11-09 10:19:52.722  INFO 16236 --- [http-nio-8023-exec-3] org.bohemia.webapi.utils.jwt.TokenUtil   : Error in TokenUtil getClainUsername: 
+2020-11-11 09:47:18.937 ERROR 12948 --- [http-nio-8023-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on Mon Nov 09 10:14:52 CST 2020.
-	at com.auth0.jwt.JWTVerifier.assertDateIsFuture(JWTVerifier.java:441) ~[java-jwt-3.4.0.jar:na]
-	at com.auth0.jwt.JWTVerifier.assertValidDateClaim(JWTVerifier.java:432) ~[java-jwt-3.4.0.jar:na]
-	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:373) ~[java-jwt-3.4.0.jar:na]
-	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:355) ~[java-jwt-3.4.0.jar:na]
-	at org.bohemia.webapi.utils.jwt.TokenUtil.getClaimUsername(TokenUtil.java:61) ~[classes/:na]
-	at org.bohemia.webapi.controller.UserController.getInfo(UserController.java:70) [classes/:na]
+java.lang.NullPointerException: null
+	at org.bohemia.webapi.controller.UserController.login(UserController.java:50) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
@@ -550,317 +174,7 @@ com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on Mon Nov
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
 
-2020-11-09 10:19:52.732  INFO 16236 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:19:52.846  INFO 16236 --- [http-nio-8023-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:19:52.866  INFO 16236 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":400,"message":"token验证失败，不存在此用户或token过期"}
-2020-11-09 10:20:09.007  INFO 16236 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:20:09
-2020-11-09 10:20:09.010  INFO 16236 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MjAwOX0.6EAyssFLOZqJVp6MtdA5ZJgNrO4ZpygpJooAOGviVJ0"}
-2020-11-09 10:20:19.176  INFO 16236 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":400,"message":"token验证失败，不存在此用户或token过期"}
-2020-11-09 10:20:55.993  INFO 11852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 11852 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:20:55.995  INFO 11852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:20:56.030  INFO 11852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:20:56.031  INFO 11852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:20:56.424  WARN 11852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:20:56.424  WARN 11852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:20:56.865  INFO 11852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:20:56.870  INFO 11852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:20:56.870  INFO 11852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:20:56.928  INFO 11852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:20:56.928  INFO 11852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
-2020-11-09 10:20:57.498  INFO 11852 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:20:57.557  INFO 11852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:20:57.616  INFO 11852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:20:57.713  INFO 11852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:20:57.714  INFO 11852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:20:57.723  INFO 11852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:20:57.741  INFO 11852 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:20:57.838  INFO 11852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.082 seconds (JVM running for 2.661)
-2020-11-09 10:21:01.098  INFO 11852 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:21:01.098  INFO 11852 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:21:01.102  INFO 11852 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 10:21:01.286  INFO 11852 --- [http-nio-8023-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:21:01.402  INFO 11852 --- [http-nio-8023-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:21:01.426  INFO 11852 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":400,"message":"token验证失败，不存在此用户或token过期"}
-2020-11-09 10:22:22.103  INFO 100 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 100 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:22:22.105  INFO 100 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:22:22.136  INFO 100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:22:22.136  INFO 100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:22:22.596  WARN 100 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:22:22.596  WARN 100 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:22:23.044  INFO 100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:22:23.050  INFO 100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:22:23.050  INFO 100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:22:23.110  INFO 100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:22:23.110  INFO 100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 973 ms
-2020-11-09 10:22:23.715  INFO 100 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:22:23.785  INFO 100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:22:23.854  INFO 100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:22:23.954  INFO 100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:22:23.955  INFO 100 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:22:23.964  INFO 100 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:22:23.985  INFO 100 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:22:24.098  INFO 100 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.229 seconds (JVM running for 2.771)
-2020-11-09 10:22:27.172  INFO 100 --- [http-nio-8023-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:22:27.172  INFO 100 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:22:27.179  INFO 100 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-11-09 10:22:27.233  INFO 100 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:22:27.339  INFO 100 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:22:27.354  INFO 100 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:22:27
-2020-11-09 10:22:27.508  INFO 100 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MjE0NywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.7MKdFHDgSEM2ERZoArKVQ1Zj5sniily2flcVLfiwoO0"}
-2020-11-09 10:22:36.620  INFO 100 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"role":null,"name":null,"avatar":null,"introduction":null}
-2020-11-09 10:23:15.984  INFO 100 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:34:29.141  INFO 100 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:34:29
-2020-11-09 10:34:29.143  INFO 100 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5Mjg2OSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.CqpmtAl0WUErTb-vprgUMr-dAjtXzH3-Sj2MPZRmQBg"}
-2020-11-09 10:34:29.167  INFO 100 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:34:57.170  INFO 11256 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 11256 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:34:57.171  INFO 11256 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:34:57.203  INFO 11256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:34:57.203  INFO 11256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:34:57.611  WARN 11256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:34:57.611  WARN 11256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:34:58.103  INFO 11256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:34:58.109  INFO 11256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:34:58.109  INFO 11256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:34:58.177  INFO 11256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:34:58.177  INFO 11256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
-2020-11-09 10:34:58.768  INFO 11256 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:34:58.837  INFO 11256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:34:58.912  INFO 11256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:34:59.032  INFO 11256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:34:59.033  INFO 11256 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:34:59.044  INFO 11256 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:34:59.060  INFO 11256 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:34:59.178  INFO 11256 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.24 seconds (JVM running for 2.783)
-2020-11-09 10:35:02.253  INFO 11256 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:35:02.253  INFO 11256 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:35:02.259  INFO 11256 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-11-09 10:35:02.322  INFO 11256 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:35:02.429  INFO 11256 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:35:02.444  INFO 11256 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:35:02
-2020-11-09 10:35:02.595  INFO 11256 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MjkwMiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.QLQGRJyVi1jkKCkc9I6GyhMRIRtM6VaNZG48-DJDulA"}
-2020-11-09 10:35:02.630  INFO 11256 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:35:13.257  INFO 11256 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:35:13
-2020-11-09 10:35:13.258  INFO 11256 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MjkxMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.TT36JX-_A6g1pHUNoeWnMhfiXUwwJC_xK-3ksnFEw-4"}
-2020-11-09 10:35:13.305  INFO 11256 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:35:37.732  INFO 11256 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:35:37
-2020-11-09 10:35:37.734  INFO 11256 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MjkzNywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.Z0ciALNmPvARwMBPYSEThzZVrd9_xyv06gD3W-FQAz8"}
-2020-11-09 10:35:37.761  INFO 11256 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:35:46.686  INFO 11256 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:35:46
-2020-11-09 10:35:46.687  INFO 11256 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5Mjk0NiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.HDD5O4hYA4CjK4OpSo_NlpbIKdjYF5rcg5h8s27hxv0"}
-2020-11-09 10:35:46.715  INFO 11256 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:36:49.043  INFO 11256 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:36:49
-2020-11-09 10:36:49.044  INFO 11256 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MzAwOSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.5lTiEkpK7g-OMicKYT3mXQll1Nz8bBACMM3TzGVi1IE"}
-2020-11-09 10:36:49.073  INFO 11256 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:39:01.625  INFO 11256 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:39:01
-2020-11-09 10:39:01.625  INFO 11256 --- [http-nio-8023-exec-5] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MzE0MSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.ZTQgNkssgfbcK1ksQe4IUKMyx-7P93CyywDvNNeIDeI"}
-2020-11-09 10:39:01.647  INFO 11256 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:44:07.013  INFO 16208 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 16208 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:44:07.015  INFO 16208 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:44:07.046  INFO 16208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:44:07.047  INFO 16208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:44:07.472  WARN 16208 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:44:07.472  WARN 16208 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:44:07.965  INFO 16208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:44:07.970  INFO 16208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:44:07.971  INFO 16208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:44:08.030  INFO 16208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:44:08.030  INFO 16208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
-2020-11-09 10:44:08.657  INFO 16208 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:44:08.715  INFO 16208 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:44:08.782  INFO 16208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:44:08.891  INFO 16208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:44:08.892  INFO 16208 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:44:08.901  INFO 16208 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:44:08.917  INFO 16208 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:44:09.012  INFO 16208 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.23 seconds (JVM running for 2.743)
-2020-11-09 10:44:13.245  INFO 16208 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:44:13.245  INFO 16208 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:44:13.250  INFO 16208 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 10:44:13.499  INFO 16208 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:44:13.634  INFO 16208 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:44:13.660  INFO 16208 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:44:17.357  WARN 16208 --- [http-nio-8023-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-11-09 10:44:47.609  WARN 16208 --- [http-nio-8023-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-11-09 10:45:07.467  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 14852 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:45:07.469  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:45:07.498  INFO 14852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:45:07.498  INFO 14852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:45:07.888  WARN 14852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:45:07.888  WARN 14852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:45:08.321  INFO 14852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:45:08.326  INFO 14852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:45:08.326  INFO 14852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:45:08.382  INFO 14852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:45:08.382  INFO 14852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 884 ms
-2020-11-09 10:45:08.951  INFO 14852 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:45:09.008  INFO 14852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:45:09.066  INFO 14852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:45:09.160  INFO 14852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:45:09.161  INFO 14852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:45:09.170  INFO 14852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:45:09.187  INFO 14852 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:45:09.285  INFO 14852 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.044 seconds (JVM running for 2.505)
-2020-11-09 10:45:15.311  INFO 14852 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:45:15.312  INFO 14852 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:45:15.316  INFO 14852 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 10:45:15.349  INFO 14852 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"message":"退出登录!"}
-2020-11-09 10:45:17.214  INFO 14852 --- [http-nio-8023-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:45:17.319  INFO 14852 --- [http-nio-8023-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:45:17.333  INFO 14852 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:45:17
-2020-11-09 10:45:17.478  INFO 14852 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MzUxNywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.dmQuyxEhK2niG779hLfjig9QIwYiufZ422de6PTSsJM"}
-2020-11-09 10:45:17.507  INFO 14852 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:45:20.419  INFO 14852 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"退出登录!"}
-2020-11-09 10:45:24.346  INFO 14852 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:45:24
-2020-11-09 10:45:24.347  INFO 14852 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5MzUyNCwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.dwNAneaaZTYkaLMh1anHooFVy8tovzTvQf-HFnYwulo"}
-2020-11-09 10:45:24.368  INFO 14852 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:45:28.222  INFO 14852 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"退出登录!"}
-2020-11-09 10:49:03.005  INFO 15972 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 15972 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:49:03.008  INFO 15972 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:49:03.038  INFO 15972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:49:03.039  INFO 15972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:49:03.434  WARN 15972 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:49:03.434  WARN 15972 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:49:03.869  INFO 15972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:49:03.874  INFO 15972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:49:03.874  INFO 15972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:49:03.929  INFO 15972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:49:03.929  INFO 15972 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 890 ms
-2020-11-09 10:49:04.509  INFO 15972 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:49:04.588  INFO 15972 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:49:04.654  INFO 15972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:49:04.760  INFO 15972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:49:04.761  INFO 15972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:49:04.771  INFO 15972 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:49:04.787  INFO 15972 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:49:04.891  INFO 15972 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.133 seconds (JVM running for 2.672)
-2020-11-09 10:49:07.099  INFO 15972 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:49:07.099  INFO 15972 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:49:07.104  INFO 15972 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 10:49:07.158  INFO 15972 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:49:07.262  INFO 15972 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:49:07.275  INFO 15972 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:49:07
-2020-11-09 10:49:07.428  INFO 15972 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5Mzc0NywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.nSf45t765IGhXj4YR2uBs4XP7cIwu_ms8AidFuiy0xg"}
-2020-11-09 10:49:07.461  INFO 15972 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:49:11.229  WARN 15972 --- [http-nio-8023-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:49:58.440  INFO 15972 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:49:59.321  INFO 15972 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:50:01.569  WARN 15972 --- [http-nio-8023-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:50:40.022  INFO 6492 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 6492 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:50:40.024  INFO 6492 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:50:40.053  INFO 6492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:50:40.053  INFO 6492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:50:40.447  WARN 6492 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:50:40.447  WARN 6492 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:50:40.932  INFO 6492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:50:40.938  INFO 6492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:50:40.939  INFO 6492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:50:41.014  INFO 6492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:50:41.014  INFO 6492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
-2020-11-09 10:50:41.586  INFO 6492 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:50:41.644  INFO 6492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:50:41.671  INFO 6492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:50:41.803  INFO 6492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:50:41.803  INFO 6492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:50:41.812  INFO 6492 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:50:41.828  INFO 6492 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:50:41.923  INFO 6492 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.186 seconds (JVM running for 2.733)
-2020-11-09 10:50:44.279  INFO 6492 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:50:44.279  INFO 6492 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:50:44.283  INFO 6492 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2020-11-09 10:50:44.310  WARN 6492 --- [http-nio-8023-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:51:51.839  INFO 6492 --- [http-nio-8023-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:51:52.049  INFO 6492 --- [http-nio-8023-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:51:52.073  INFO 6492 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:51:52.084  INFO 6492 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:51:52.306  INFO 6492 --- [http-nio-8023-exec-7] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:51:56.120  WARN 6492 --- [http-nio-8023-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:53:56.242  WARN 6492 --- [http-nio-8023-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:54:48.361  INFO 6492 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:54:49.071  INFO 6492 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:54:52.402  WARN 6492 --- [http-nio-8023-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:55:19.799  INFO 6492 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:56:00.568  INFO 6492 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:56:13.298  INFO 6492 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:57:02.399  INFO 6492 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:57:02.669  INFO 6492 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:57:08.289  WARN 6492 --- [http-nio-8023-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String org.bohemia.webapi.controller.UserController.logout(com.alibaba.fastjson.JSONObject) throws com.fasterxml.jackson.core.JsonProcessingException]
-2020-11-09 10:59:05.805  INFO 1900 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 1900 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 10:59:05.807  INFO 1900 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 10:59:05.835  INFO 1900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 10:59:05.836  INFO 1900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 10:59:06.300  WARN 1900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 10:59:06.300  WARN 1900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 10:59:06.735  INFO 1900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 10:59:06.739  INFO 1900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 10:59:06.739  INFO 1900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 10:59:06.794  INFO 1900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 10:59:06.794  INFO 1900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
-2020-11-09 10:59:07.392  INFO 1900 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 10:59:07.455  INFO 1900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 10:59:07.522  INFO 1900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 10:59:07.621  INFO 1900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 10:59:07.622  INFO 1900 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 10:59:07.631  INFO 1900 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 10:59:07.647  INFO 1900 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 10:59:07.745  INFO 1900 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.17 seconds (JVM running for 2.843)
-2020-11-09 10:59:11.610  INFO 1900 --- [http-nio-8023-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 10:59:11.610  INFO 1900 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 10:59:11.617  INFO 1900 --- [http-nio-8023-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-11-09 10:59:11.820  INFO 1900 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 10:59:11.943  INFO 1900 --- [http-nio-8023-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 10:59:11.965  INFO 1900 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:59:15.666  WARN 1900 --- [http-nio-8023-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'token' is not present]
-2020-11-09 10:59:47.462  INFO 1900 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:59:50.234  INFO 1900 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
-2020-11-09 10:59:52.004  INFO 1900 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 10:59:52
-2020-11-09 10:59:52.006  INFO 1900 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDg5NDM5MiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.N1hbBZb6LhZ19-b1St93xLmhVzrbPLzC9vMtIULtpZY"}
-2020-11-09 10:59:52.022  INFO 1900 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 10:59:54.485  INFO 1900 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
-2020-11-09 15:47:32.701  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 11024 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
-2020-11-09 15:47:32.704  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
-2020-11-09 15:47:32.735  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-09 15:47:32.735  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-09 15:47:33.248  WARN 11024 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'org.bohemia.webapi.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-11-09 15:47:33.248  WARN 11024 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.bohemia.webapi.mapper]' package. Please check your configuration.
-2020-11-09 15:47:33.689  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8023 (http)
-2020-11-09 15:47:33.695  INFO 11024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-09 15:47:33.695  INFO 11024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2020-11-09 15:47:33.751  INFO 11024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-09 15:47:33.751  INFO 11024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
-2020-11-09 15:47:34.382  INFO 11024 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-09 15:47:34.443  INFO 11024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-09 15:47:34.522  INFO 11024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-09 15:47:34.664  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8023 (http) with context path '/api'
-2020-11-09 15:47:34.665  INFO 11024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-11-09 15:47:34.676  INFO 11024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-11-09 15:47:34.699  INFO 11024 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-11-09 15:47:34.837  INFO 11024 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Started WebApiApplication in 2.482 seconds (JVM running for 3.149)
-2020-11-09 15:48:13.325  INFO 11024 --- [http-nio-8023-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-09 15:48:13.325  INFO 11024 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-09 15:48:13.331  INFO 11024 --- [http-nio-8023-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-11-09 15:48:13.356  INFO 11024 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-09 15:48:13.466  INFO 11024 --- [http-nio-8023-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-09 15:48:13.488  INFO 11024 --- [http-nio-8023-exec-2] o.b.webapi.controller.UserController     : {"code":200,"count":1}
-2020-11-09 15:48:41.875  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"count":0}
-2020-11-09 16:31:48.449  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:31:48
-2020-11-09 16:31:48.599  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNDMwOCwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.sWOa-o8s_OfXRPFMHrKKybPJ0o3eHiWoP5JIzRVbC7M"}
-2020-11-09 16:31:48.626  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 16:32:56.225  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 16:32:58.602  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
-2020-11-09 16:48:03.307  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:48:03
-2020-11-09 16:48:03.308  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTI4MywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.bG8-wOv2oMm-azjmB0nl5xxnecJKy91ZPbxdlEoPcF4"}
-2020-11-09 16:48:03.336  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 16:49:08.126  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 16:49:10.481  INFO 11024 --- [http-nio-8023-exec-3] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
-2020-11-09 16:52:01.314  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:01
-2020-11-09 16:52:01.314  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMSwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.6W5Sq3jBYY5IcH3WLnoPehr9viMSz9MWngBVYLlinvw"}
-2020-11-09 16:52:03.008  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
-2020-11-09 16:52:03.009  INFO 11024 --- [http-nio-8023-exec-8] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
-2020-11-09 16:52:03.630  INFO 11024 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
-2020-11-09 16:52:03.631  INFO 11024 --- [http-nio-8023-exec-9] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
-2020-11-09 16:52:03.880  INFO 11024 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:03
-2020-11-09 16:52:03.881  INFO 11024 --- [http-nio-8023-exec-10] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyMywidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.-q-Y0ltCD3jnBcTWvSSNeHQjkE6cTjp_QDqS7CzanAE"}
-2020-11-09 16:52:06.145  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : 704398960@qq.com  尝试登录: 2020-11-09 16:52:06
-2020-11-09 16:52:06.146  INFO 11024 --- [http-nio-8023-exec-1] o.b.webapi.controller.UserController     : {"code":200,"message":"登录成功","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDQzOTg5NjBAcXEuY29tIiwiaXNzIjoiQm9oZW1pYSIsImV4cCI6MTYwNDkxNTUyNiwidXNlcm5hbWUiOiI3MDQzOTg5NjBAcXEuY29tIn0.Ijvvgii0dr2HrfUnot1wDLX5V5sXDi1RIie154i2LIM"}
-2020-11-09 16:54:40.593  INFO 11024 --- [http-nio-8023-exec-4] o.b.webapi.controller.UserController     : {"code":200,"role":"admin","name":"Bohemia","avatar":null,"introduction":null}
-2020-11-09 16:54:43.912  INFO 11024 --- [http-nio-8023-exec-6] o.b.webapi.controller.UserController     : {"code":200,"message":"704398960@qq.com退出登录!"}
+2020-11-11 09:48:38.444  INFO 6548 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : Starting WebApiApplication on DESKTOP-1MMAKE7 with PID 6548 (D:\Project\FuckWeb\web-api\target\classes started by LBohemiaY in D:\Project\FuckWeb\web-api)
+2020-11-11 09:48:38.447  INFO 6548 --- [restartedMain] org.bohemia.webapi.WebApiApplication     : No active profile set, falling back to default profiles: default
+2020-11-11 09:48:38.493  INFO 6548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-11 09:48:38.493  INFO 6548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
